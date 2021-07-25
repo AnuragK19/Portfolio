@@ -2,119 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anurag | Portfolio</title>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Anurag | Portfolio</title>
 
-    <!-- Bootstrap files -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+   <!-- Bootstrap files -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/app.js"></script>
 
-    <!-- Animate css goes here -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+   <!-- Animate css goes here -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Google fonts goes here -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
-    <script>
-        $(document).ready(function () {
-            $(".bulb").click(function () {
-                $(".bulb").toggleClass("bulb-on");
-                $("body").toggleClass("dark-mode");
-            });
+   <!-- Google fonts goes here -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
 
-            $(".toggle-lockdn").click(function () {
-                if ($(".profile-img").hasClass("dolly-icon")) {
-                    $(".profile-img").removeClass("dolly-icon")
-                    $(".profile-img").attr("src", "/img/lockdown.png")
-                } else {
-                    $(".profile-img").attr("src", "/img/normal.png")
-                    $(".profile-img").addClass("dolly-icon")
-                }
-            })
-        });
-    </script>
+
+   <script>
+      $(document).ready(function () {
+
+         let favtheme = confirm("Are you fan of dark theme?😅");
+         if (favtheme === true) {
+            $(".bulb").toggleClass("bulb-on");
+            $("body").toggleClass("dark-mode");
+         }
+
+         $(".bulb").click(function () {
+            $(".bulb").toggleClass("bulb-on");
+            $("body").toggleClass("dark-mode");
+         });
+
+         $(".toggle-lockdn").click(function () {
+            if ($(".profile-img").hasClass("dolly-icon")) {
+               $(".profile-img").removeClass("dolly-icon");
+               $(".profile-img").attr("src", "/img/lockdown.png");
+            } else {
+               $(".profile-img").attr("src", "/img/normal.png");
+               $(".profile-img").addClass("dolly-icon");
+            }
+         });
+      });
+   </script>
 </head>
 
 <body class="animate__animated animate__fadeIn">
-    <!-- Hanging bulb animation -->
-    <div class="bulb">
-    </div>
+   <!-- Hanging bulb animation -->
+   <div class="bulb"></div>
 
-    <!-- Nav goes here -->
-    <nav class="navbar navbar-expand-lg navbar-light morphism rounded-0">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-white" href="#">&lt;anurag/&gt;</a>
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                <li class="nav-item d-none d-md-block">
-                    <a class="nav-link active" aria-current="page" href="mailto:anuraagkurmi@gmail.com">.ContactMe()</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+   <!-- Nav goes here -->
+   <nav class="navbar navbar-expand-lg navbar-light morphism rounded-0">
+      <div class="container">
+         <a class="navbar-brand fw-bold text-white" href="#">&lt;anurag/&gt;</a>
+         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item d-none d-md-block">
+               <a class="nav-link active" aria-current="page" href="mailto:anuraagkurmi@gmail.com">.ContactMe()</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
 
-    <!-- Main content starts here -->
-    <div class="container mt-md-5 px-4">
-        <div class="row justify-content-evenly">
-            <div
-                class="col-md-5 text-white p-3 my-3 my-md-0 p-md-4 morphism animate__animated animate__zoomIn position-relative">
-                <div class="row">
-                    <div class="col-md-3 text-md-center mb-3 mb-md-0 p-0">
-                        <img src="img/normal.png"
-                            class="img-rounded d-inline-block img-fluid animate__animated animate__fadeIn animate__delay-1s profile-img dolly-icon"
-                            alt="Emoji">
-                    </div>
-                    <div class="col-md-9 animate__animated animate__fadeInDown">
-                        <p class="m-0">
-                            <span class="text-decoration-underline fw-bold text-uppercase">About me</span> <br />I am
-                            Anurag Kurmi, a
-                            Software Developer
-                            interested
-                            in crafting best web
-                            experiences. I always enjoy creating beautifully designed, intuitive and functional
-                            websites.
-                        </p>
-                    </div>
-                    <div class="col-md-12 mt-3">
-                        <button class="btn btn-sm btn-primary toggle-lockdn position-absolute" style="left: 11px;
-                        bottom: -16px;"><small>Toggle
-                                Lockdown</small></button>
-                    </div>
-                </div>
+   <!-- Main content starts here -->
+   <div class="container mt-md-5 px-4">
+      <div class="row justify-content-evenly">
+         <div class="
+            col-md-5
+            text-white
+            p-3
+            my-3 my-md-0
+            p-md-4
+            morphism
+            animate__animated animate__zoomIn
+            position-relative
+          ">
+            <div class="row">
+               <div class="col-md-3 text-md-center mb-3 mb-md-0 p-0">
+                  <img src="img/normal.png" class="
+                  img-rounded
+                  d-inline-block
+                  img-fluid
+                  animate__animated animate__fadeIn animate__delay-1s
+                  profile-img
+                  dolly-icon
+                " alt="Emoji" />
+               </div>
+               <div class="col-md-9 animate__animated animate__fadeInDown">
+                  🙋‍♂️<span class="text-decoration-underline fw-bold text-uppercase"> About me</span>
+                  <p class="mt-3">
+                     I am Anurag Kurmi, a Software Developer ⌨ interested in
+                     crafting best web experiences. I always enjoy creating
+                     beautifully designed, intuitive and functional websites.
+                  </p>
+                  <p></p>
+               </div>
+               <div class="col-md-12 mt-3">
+                  <button class="btn btn-sm btn-primary toggle-lockdn position-absolute"
+                     style="left: 11px; bottom: -16px">
+                     👉 Toggle Lockdown 👈
+                  </button>
+               </div>
             </div>
-            <div
-                class="col-md-6 morphism p-0 p-md-4 text-white p-md-4 p-3  animate__animated animate__zoomIn animate__delay-1s">
-                <span class="text-decoration-underline fw-bold d-block">Experience</span>
-                <div class="work mt-3">
-                    <small class="label small">03<sup>rd</sup> September 2019 – Till date</small><br />
-                    Jr. Software Engineer, Unicoconnect LLP<br />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio projects goes here -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-12">
+         </div>
+         <div class="
+            col-md-6
+            morphism
+            p-0 p-md-4
+            text-white
+            p-md-4 p-3
+            animate__animated animate__zoomIn 
+          ">
+            <span class="text-decoration-underline fw-bold d-block text-uppercase">Experience</span>
+            <div class="work mt-3">
+               <small class="label small">03<sup>rd</sup> September 2019 – Till date</small><br />
+               <strong>Jr. Software Developer</strong>, Unicoconnect LLP
 
             </div>
-            <div class="col-md-3 col-12">
+            <a class="btn btn-sm btn-primary my-3" href="https://www.linkedin.com/in/anurag-kurmi" target="_blank">
+               View on LinkedIn 👉
+            </a>
+         </div>
+      </div>
+   </div>
 
-            </div>
-            <div class="col-md-3 col-12">
+   <!-- Educational qualification goes here -->
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4 col-12"></div>
 
-            </div>
-            <div class="col-md-3 col-12">
+      </div>
+   </div>
 
-            </div>
-        </div>
-    </div>
+   <!-- Portfolio projects goes here -->
+   <div class="container">
+      <div class="row">
+         <div class="col-md-3 col-12"></div>
+         <div class="col-md-3 col-12"></div>
+         <div class="col-md-3 col-12"></div>
+         <div class="col-md-3 col-12"></div>
+      </div>
+   </div>
 </body>
 
 </html>

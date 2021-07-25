@@ -7,8 +7,8 @@ body {
 body {
   background-image: url("../img/bg-light.jpg");
   background-size: 100%;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.5px;
+  font-family: "Life Savers", cursive;
+  letter-spacing: 1.3px;
   transition: 2.5s;
   background-position: center;
 }
@@ -17,7 +17,9 @@ body {
 }
 .btn-primary {
 }
-
+.text-decoration-underline {
+  text-underline-offset: 3px;
+}
 .dark-mode .btn-primary {
 }
 body + div {
@@ -27,7 +29,7 @@ body + div {
   border-radius: 15px;
 }
 .fw-bold {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Life Savers", cursive;
   font-weight: 600 !important;
 }
 .morphism {
