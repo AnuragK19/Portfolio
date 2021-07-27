@@ -9,13 +9,20 @@ body {
   background-size: 100%;
   font-family: "Life Savers", cursive;
   letter-spacing: 1.3px;
-  transition: 2.5s;
+  transition: background 2.5s;
   background-position: center;
+}
+.container {
+  max-width: 1500px;
 }
 .btn {
   border-radius: 30px !important;
 }
 .btn-primary {
+  background-color: darkcyan !important;
+}
+.dark-mode .btn-primary {
+  background-color: #162042 !important;
 }
 .text-decoration-underline {
   text-underline-offset: 3px;
@@ -99,6 +106,25 @@ body.dark-mode {
 .dark-mode p,
 .dark-mode a {
   color: white !important;
+}
+
+.social-icon {
+  transition: 0.7s;
+}
+.social-icon:hover {
+  /* border: 1px solid white; */
+  cursor: pointer;
+  color: white;
+}
+.social-icon.linkedin:hover {
+  background-color: #0e76a8;
+}
+.social-icon.github:hover {
+  background-color: #333;
+}
+.social-icon.instagram:hover {
+  background: #c13584;
+  transition: 0.3s;
 }
 
 @media (max-width: 500px) {
