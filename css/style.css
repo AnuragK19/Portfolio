@@ -126,8 +126,8 @@ body.dark-mode {
   background: #c13584;
   transition: 0.3s;
 }
-div {
-  cursor: url("../img/pointer.png");
+body {
+  cursor: url(../img/pointer.png), pointer;
 }
 .modal-content {
   color: white;
