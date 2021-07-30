@@ -12,6 +12,7 @@
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="js/app.js"></script>
 
    <!-- Font Awesome files -->
@@ -29,13 +30,21 @@
 
 
    <script>
-      $(document).ready(function () {
-
-         let favtheme = confirm("Should I turn on dark theme?😅");
-         if (favtheme === true) {
-            $(".bulb").toggleClass("bulb-on");
+      function switchTheme(status) {
+         if (status == true) {
             $("body").toggleClass("dark-mode");
+            $(".bulb").toggleClass("bulb-on");
+            $('#alert-modal').modal("hide");
+
+         } else {
+            $(".bulb").toggleClass("bulb-off");
+            $("body").removeClass("dark-mode");
+            $('#alert-modal').modal("hide");
+
          }
+      }
+      $(document).ready(function () {
+         $('#alert-modal').modal("show");
 
          $(".bulb").click(function () {
             $(".bulb").toggleClass("bulb-on");
@@ -56,6 +65,24 @@
 </head>
 
 <body class="animate__animated animate__fadeIn">
+
+   <!-- Alert modal -->
+   <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="alert-modal" tabindex="-1"
+      role="dialog" aria-labelledby="alert-modalTitle" aria-hidden="true" id="myModal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+            <div class="modal-body text-center">
+               Do you like dark theme?😅
+            </div>
+            <div class="modal-footer border-0 d-flex justify-content-center">
+               <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="switchTheme(true)">Yes
+                  🌚</button>
+               <button type="button" class="btn btn-primary" onclick="switchTheme(false)">No 🌕</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <!-- Hanging bulb animation -->
    <div class="bulb"></div>
 
