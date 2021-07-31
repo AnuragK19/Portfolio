@@ -172,7 +172,7 @@ body {
 
 .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
-  left: 10px;
+  left: -15px;
   padding: 10px !important;
   background: white;
   font-size: 30px;
@@ -189,7 +189,7 @@ body {
 }
 .owl-carousel .owl-nav button.owl-next {
   position: absolute;
-  right: 10px;
+  right: -15px;
   padding: 10px;
   background: white;
   font-size: 30px;
