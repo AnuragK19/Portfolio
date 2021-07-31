@@ -95,12 +95,18 @@ body.dark-mode {
   transition: 2s;
 }
 
-div.own-card {
-  transition: background 2s;
-}
-.own-card:hover {
+.dark-mode .own-card,
+.own-card {
   background-image: url(../img/card.jpg) !important;
   background-size: cover;
+}
+
+.education,
+.dark-mode .education {
+  background-image: url("../img/university.png") !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom right;
 }
 
 .work {
