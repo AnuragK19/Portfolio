@@ -51,7 +51,7 @@ body + div {
 }
 
 div.bulb-on {
-  position: absolute;
+  position: fixed;
   height: 100px;
   width: 80px;
   top: 0;
@@ -66,7 +66,7 @@ div.bulb-on {
   animation: swing 0.5s ease-in-out infinite;
 }
 div.bulb {
-  position: absolute;
+  position: fixed;
   height: 100px;
   width: 80px;
   background-image: url("../img/on.png");
