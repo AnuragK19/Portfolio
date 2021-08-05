@@ -31,6 +31,10 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
 
+   <!-- Meta tags goes here -->
+   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+   <meta name="theme-color" content="#ffffff">
+
 
    <script>
       function switchTheme(status) {
@@ -75,9 +79,9 @@
          $(".toggle-lockdn").click(function () {
             if ($(".profile-img").hasClass("dolly-icon")) {
                $(".profile-img").removeClass("dolly-icon");
-               $(".profile-img").attr("src", "/img/lockdown.png");
+               $(".profile-img").attr("src", "/Portfolio/img/lockdown.png");
             } else {
-               $(".profile-img").attr("src", "/img/normal.png");
+               $(".profile-img").attr("src", "/Portfolio/img/normal.png");
                $(".profile-img").addClass("dolly-icon");
             }
          });
@@ -86,25 +90,7 @@
 </head>
 
 <body class="">
-   <!-- Floating shapes -->
-   <ul class='circles'>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-   </ul>
+  
 
    <!-- Alert modal -->
    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="alert-modal" tabindex="-1"
@@ -128,7 +114,7 @@
    <div class="bulb"></div>
 
    <!-- Nav goes here -->
-   <nav class="navbar navbar-expand-lg navbar-light morphism rounded-0">
+   <nav class="navbar navbar-expand-lg navbar-light morphism rounded-0 fixed-top">
       <div class="container">
          <a class="navbar-brand fw-bold text-white" href="#">&lt;anurag/&gt;</a>
          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
@@ -140,7 +126,26 @@
    </nav>
 
    <!-- Main content starts here -->
-   <div class="container my-md-5 px-4">
+   <div class="container my-md-5 px-4 overflow-hidden">
+       <!-- Floating shapes -->
+   <ul class='circles'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   </ul>
       <div class="row justify-content-between">
          <div class="
             col-md-5
