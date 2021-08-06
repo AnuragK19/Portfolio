@@ -99,17 +99,9 @@ body.dark-mode {
 }
 .dark-mode .own-card,
 .own-card {
-  background-image: url(../img/card.jpg) !important;
+  background-image: url(../img/card.png) !important;
   background-size: cover;
 }
-
-/* .education,
-.dark-mode .education {
-  background-image: url("../img/university.png") !important;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom right;
-} */
 
 .work {
   padding-left: 10px;
