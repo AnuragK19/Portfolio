@@ -20,7 +20,7 @@ body {
   border-radius: 30px !important;
 }
 .btn-primary {
-  background-color: cornflowerblue;
+  background-color: #043851;
 }
 .dark-mode .btn-primary {
   background-color: #162042 !important;
@@ -88,8 +88,8 @@ body.dark-mode {
 .dark-mode .morphism {
   background: rgba(42, 47, 89, 0.45);
   box-shadow: 0 8px 32px 0 rgba(28, 32, 87, 0.37);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(61, 60, 122, 0.18);
   border-radius: 25px;
   transition: 2s;
@@ -143,8 +143,8 @@ body {
   color: white;
   background: rgba(26, 29, 54, 0.95);
   box-shadow: 0 8px 32px 0 rgba(28, 32, 87, 0.5);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(61, 60, 122, 0.18);
   border-radius: 25px;
   transition: 2s;
